@@ -56,7 +56,7 @@ paths:
   /Versions:
     servers:
       - url: 'https://api.example.com/TestCall'
-      - description: Override base path for Versions query
+        description: Override base path for Versions query
     get:
       tags:
         - RetrieveVersions
