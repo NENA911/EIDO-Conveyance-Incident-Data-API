@@ -1,6 +1,6 @@
 # EIDO-Conveyance-Incident-Data-API
 
-Description forthcoming.
+EIDO Dereference Factory and EIDO Retrieval Service
 
 ## Owner
 

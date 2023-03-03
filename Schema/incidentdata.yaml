@@ -55,8 +55,8 @@ paths:
           description: Not Acceptable
   /Versions:
     servers:
-      - url: 'https://api.example.com/TestCall'
-      - description: Override base path for Versions query
+      - url: 'https://localhost/IncidentData'
+        description: Override base path for Versions query
     get:
       tags:
         - RetrieveVersions
