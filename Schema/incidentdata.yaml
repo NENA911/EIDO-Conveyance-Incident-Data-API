@@ -5,7 +5,7 @@ info:
 servers:
   - url: 'https://localhost/IncidentData/v1'
 paths:
-  /dereference/{incidentID}:
+  /references/{incidentID}:
     get:
       parameters:
         - in: path
