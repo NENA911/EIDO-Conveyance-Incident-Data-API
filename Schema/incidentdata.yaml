@@ -60,7 +60,7 @@ paths:
   /Versions:
     servers:
       - url: 'https://localhost/IncidentData'
-      - description: Override base path for Versions query
+        description: Override base path for Versions query
     get:
       tags:
         - RetrieveVersions
