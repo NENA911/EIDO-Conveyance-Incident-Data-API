@@ -1,7 +1,7 @@
 openapi: '3.0.2'
 info:
   title: EIDO Dereference Factory and EIDO Retrieval Service 
-  version: '1.0'
+  version: '1.0.1'
 servers:
   - url: 'https://localhost/IncidentData/v1'
 paths:
@@ -23,12 +23,14 @@ paths:
                 type: string
                 description: Opaque dereference Service URI for the incident. 
                 format: uri
-        '404':
-          description: Not found
         '403':
           description: Forbidden
+        '404':
+          description: Not found
         '406':
           description: Not Acceptable
+        '500':
+          description: Internal Server Error
                 
   /incidents/{incidentID}:
     parameters:
@@ -47,12 +49,14 @@ paths:
               schema:
                 type: object
                 description: EIDO representing the state of the incident 
-        '404':
-          description: Not found
         '403':
           description: Forbidden
+        '404':
+          description: Not found
         '406':
           description: Not Acceptable
+        '500':
+          description: Internal Server Error
   /Versions:
     servers:
       - url: 'https://localhost/IncidentData'
